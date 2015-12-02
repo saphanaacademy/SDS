@@ -1,0 +1,23 @@
+CREATE SCHEMA schema_in (ID integer, POLICY string, AGE integer, AMOUNT integer, OCCUPATION string);
+CREATE SCHEMA schema_out (FRAUD string, PROBABILITY double);
+
+DECLARE MODEL sha_hoeffding_score_demo
+ TYPE MACHINE_LEARNING
+ INPUT SCHEMA schema_in
+ OUTPUT SCHEMA schema_out
+ PROPERTIES dataservice = 'hanadb' 
+ ;
+
+CREATE INPUT STREAM in1
+ SCHEMA schema_in 
+ ;
+
+CREATE OUTPUT STREAM model_stream AS
+ EXECUTE MODEL sha_hoeffding_score_demo
+ FROM in1 
+ ;
+
+CREATE OUTPUT STREAM out1 AS 
+ SELECT * FROM model_stream 
+ ;
+ 

@@ -1,0 +1,16 @@
+in1,i,Home,24,300,Sales,No
+in1,i,Home,41,1200,IT,No
+in1,i,Home,38,2800,Sales,Yes
+in1,i,Home,62,6000,Marketing,No
+in1,i,Home,51,4000,Sales,No
+in1,i,Travel,33,200,Sales,No
+in1,i,Travel,46,800,IT,No
+in1,i,Travel,42,1000,Marketing,No
+in1,i,Travel,21,900,Sales,No
+in1,i,Vehicle,44,4000,IT,No
+in1,i,Vehicle,64,1000,Sales,Yes
+in1,i,Vehicle,54,900,IT,No
+in1,i,Vehicle,26,2500,Sales,No
+in1,i,Vehicle,44,1300,Marketing,Yes
+in1,i,Vehicle,28,2590,Sales,No
+in1,i,Vehicle,24,4300,IT,Yes
